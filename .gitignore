@@ -1,0 +1,15 @@
+# Python Virtual Environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Python bytecode (compiled files)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables / Secret keys 
+.env
