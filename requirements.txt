@@ -3,6 +3,7 @@ pandas>=2.2.2
 seaborn
 matplotlib
 langchain-community>=0.4.2
+langchain-huggingface
 langchain-chroma>=1.1.0
 langchain-core
 sentence-transformers>=5.5.1
@@ -12,4 +13,4 @@ huggingface-hub>=0.23.0
 torch>=2.11.0
 scikit-learn>=1.6.1
 scipy>=1.16.3
-gradio
+gradio==5.9.1
