@@ -2,18 +2,18 @@
 
 A context-aware Book Recommendation System that leverages Natural Language Processing (NLP) and AI techniques to discover books based on semantic meaning, emotional tone, and genre classification. Instead of relying purely on exact keyword matches or basic metadata filtering, this system indexes vector embeddings of book descriptions to capture deep semantic concepts, allowing users to find books by describing a concept, mood, or storyline.
 
-The system features: data preprocessing and exploratory analysis, advanced NLP modeling (Vector Search, Text Classification, and Sentiment/Emotion Analysis), and a locally deployable interactive **Gradio** web application.
+The system features: data preprocessing and exploratory analysis, NLP modeling (Vector Search, Text Classification, and Sentiment Analysis), and a locally deployable interactive **Gradio** web application.
 
 ---
 
-## 🧠 Machine Learning & NLP
+## 🧠 AI & NLP
 
-The project’s notebooks explore and build the core algorithmic foundations of the recommendation engine:
+The project’s notebooks explore and build the algorithmic foundations of the recommendation engine:
 
 ### 1. Data Exploration & Preprocessing (`data-exploration-and-preprocessing.ipynb`)
 
-- **Data Cleansing:** Handles missing data, cleans text attributes, filters records with insufficient information (e.g., descriptions under 25 words), and creates composite textual features like a `tagged_description` combining ISBN and description text.
-- **Feature Engineering:** Prepares data for optimal vectorization and saves refined metadata collections (`books_with_emotions.csv`) used by the modeling tasks.
+- **Data Cleansing:** Handles missing data, cleans text attributes, filters records with insufficient information (e.g., descriptions under 25 words), and creates textual features like a `tagged_description` combining ISBN and description text.
+- **Feature Engineering:** Prepares data for vectorization and saves refined metadata collections (`books_with_emotions.csv`) used by the modeling tasks.
 
 ### 2. Vector Search & Semantic Discovery (`vector-search.ipynb`)
 
@@ -26,7 +26,7 @@ The project’s notebooks explore and build the core algorithmic foundations of 
 - **Genre and Category Tagging:** Trains and evaluates classification algorithms to bucket books into structured, consolidated categories based on raw summary descriptions.
 - **Standardization:** Automatically clusters sparse or messy publishing categories into clean, searchable top-level domains (e.g., Fiction, History, Science).
 
-### 4. Sentiment & Emotion Analysis (`sentiment-analysis.ipynb`)
+### 4. Sentiment Analysis (`sentiment-analysis.ipynb`)
 
 - **Emotional Tone Extraction:** Evaluates text to identify and assign specific emotional tones or moods (such as _Happy, Surprising, Angry, Suspenseful, and Sad_).
 - **Sentiment-Based Filtering:** Enriches the metadata with sentiment indicators, enabling the core recommendation engine to map not just _what_ a book is about, but _how it feels_ to read it.
